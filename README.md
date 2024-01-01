@@ -3,3 +3,10 @@ A CNN that classifies whether or not one has diabetic retinopathy based on an im
 
 ## The Model
 I found the neural network had consistent test and validation accuracies of around 94% and an AUC of around 98% after I tuned various hyperparameters, but I am sure higher accuracies are possible.
+
+## The Dataset
+
+## Libraries
+
+## Disclaimer
+I do not endorse or encourage the use of my work in any actual medical practice.
