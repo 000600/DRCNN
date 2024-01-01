@@ -9,4 +9,4 @@ I found the neural network had consistent test and validation accuracies of arou
 ## Libraries
 
 ## Disclaimer
-I do not endorse or encourage the use of my work in any actual medical practice.
+Please note that I do not recommend, endorse, or encourage the use of any of my work here in actual medical use or application in any way.
