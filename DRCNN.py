@@ -33,7 +33,7 @@ val_iter = val_generator.flow_from_directory(val_path, class_mode = 'binary', co
 # Define classes
 class_map = train_iter.class_indices
 
-# Initialize Adam Optimizer
+# Initialize Adam optimizer
 opt = Adam(learning_rate = 0.001)
 
 # Create model
