@@ -118,6 +118,10 @@ print(f'Train accuracy: {train_acc * 100}%')
 print(f'Test accuracy: {test_acc * 100}%')
 print(f'Validation accuray: {val_acc * 100}%')
 
+# Save the model's weights
+file = 'DRCNN%03d.h5' % (epochs)
+model.save(file)
+
 # Get inputs to view the model's predictions compared to actual labels
 sample_inputs, sample_labels = val_iter.next()
 
