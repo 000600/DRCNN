@@ -18,9 +18,9 @@ This convolutional neural network predicts whether a patient is healthy or if th
 I found the neural network had consistent test and validation accuracies of around 94% and an AUC of around 98% after I tuned various hyperparameters, but I am sure higher accuracies are possible. Feel free to further tune the hyperparameters or build upon the model! 
 
 ## The Dataset
-The dataset used here can be found at this link: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy/data. Credit for the dataset collection goes to **pkdarabi**, **markkostantine**, **nickchotik**, and others on *Kaggle*. The dataset contains approximately 2076 training images, 231 test images, and 531 validation images (2838 images total). The dataset is not included in the repository because it is too large to stably upload to Github, so use the link above to find and download the dataset.
+The dataset used here can be found at this link: https://www.kaggle.com/datasets/pkdarabi/diagnosis-of-diabetic-retinopathy/data. Credit for the dataset collection goes to **pkdarabi**, **markkostantine**, **nickchotik**, and others on *Kaggle*. In addition to containing more information about diabetic retinopathy, the dataset contains approximately 2076 training images, 231 test images, and 531 validation images (2838 images total). The dataset is not included in the repository because it is too large to stably upload to Github, so use the link above to find and download the dataset.
 
-When running the **drcnn.py** file, you will need to input the paths of the training, testing, and validation datasets (three paths total) as strings. These paths need to be inputted where the file reads:
+To properly load the dataset into the model, you will need to input the paths to the training, testing, and validation datasets (three paths total) as strings into the **drcnn.py** file. These paths need to be inputted where the file reads:
 - " < PATH TO TRAIN DATA > " 
 - " < PATH TO TEST DATA > "
 - " < PATH TO VALIDATION DATA > " 
