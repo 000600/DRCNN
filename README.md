@@ -2,7 +2,7 @@
 
 ## The Model
 
-This convolutional neural network predicts whether a patient is healthy or if they have diabetic retinopathy based on a sccan of their retinas. The model uses Tensorflow's **ImageDataGenerator** to augment the data and has an architecture consisting of:
+This convolutional neural network predicts whether a patient is healthy or if they have diabetic retinopathy based on a scan of their retinas. The model will predict a value close to 0 if the patient is predicted to have diabeteic reintopahty and a 1 if the patient is predicted not to have diabetic retinopathy. Since the model only predicts binary categorical values, it uses a binary crossentropy loss function and has 1 output neuron with a sigmoid activation function. The model uses a standard Adam optimizer with a learning rate of 0.001 and a dropout layer to prevent overfitting. The model uses Tensorflow's **ImageDataGenerator** to rescale the data and has an architecture consisting of:
 - 1 Input layer (with an input shape of (256, 256, 1))
     * The images only have one color channel because they are considered grayscale
 - 1 Conv2D layer (with 32 filters, a kernel size of (3, 3), and a ReLU activation function)
