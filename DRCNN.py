@@ -109,7 +109,6 @@ plt.ylabel('AUC')
 plt.legend()
 plt.show()
 
-
 # View train, test, and validation accuracy
 train_loss, train_acc, train_auc = model.evaluate(train_iter, verbose = 0) # Change verbose to 1 or 2 for more information
 test_loss, test_acc, test_auc = model.evaluate(test_iter, verbose = 0) 
@@ -119,10 +118,10 @@ print(f'Train accuracy: {train_acc * 100}%')
 print(f'Test accuracy: {test_acc * 100}%')
 print(f'Validation accuray: {val_acc * 100}%')
 
-# Get inputs to view model's predictions compared to actual labels
+# Get inputs to view the model's predictions compared to actual labels
 sample_inputs, sample_labels = val_iter.next()
 
-# Change this number to view more or less input images and corresponding predictins and lables
+# Change this number to view more or less input images and corresponding predictions and labels
 num_viewed_inputs = 10
 
 # Get inputs and corresponding labels and predictions
